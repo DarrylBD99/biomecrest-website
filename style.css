@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    align-content: center;
+    text-align: center;
+}
+
+.seasons {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    background-color: bisque;
+}
+
+.panorama {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
