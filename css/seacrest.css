@@ -1,0 +1,52 @@
+.title {
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title img {
+    height: 30vh;
+    width: auto;
+    margin: 2em auto;
+}
+
+.info-panel {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(8px);
+    width: 80dvw;
+    margin: 1em auto;
+}
+
+.back-button {
+    display: inline-block;
+    background: #f7dd76;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5em 1.2em;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    position: relative;
+    top: 1em;
+    left: 1em;
+}
+
+.back-button:hover,
+.back-button:focus {
+    background: #f0c14b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+@media screen and (orientation:portrait) {
+    .title img {
+        height: auto;
+        width: 40vw;
+    }
+}

@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.panorama {
+    position: fixed;
+    top: 0;
+    min-width: 100dvw; 
+    min-height: 100dvh;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.panel, .info-panel {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(8px);
+    width: 80dvw;
+    margin: 1em auto;
+}
+
+.panel h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #bbb #eee;
+}
+
+.card-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.card-slider::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+
+.card-slider::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 4px;
+}
+
+.card-slider .card {
+    flex: 0 0 20em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 1.5rem;
+    scroll-snap-align: start;
+    transition: transform 0.2s;
+}
+
+.card-slider .card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.card-slider .card:active {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-slider .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 12em;
+}
+
+.card-slider .card h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #222;
+}
+
+.card-slider .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.slider-btn {
+    background: #f7dd76;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.slider-btn:hover {
+    background: #f0c14b;
+    transform: translateY(-6px);
+}
+
+.slider-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.slider-btn:disabled:hover {
+    background: #ccc;
+    transform: translateY(0px);
+}
+
+.slider-btn:active {
+    background: #e6c34a;
+    transform: translateY(-2px);
+}
