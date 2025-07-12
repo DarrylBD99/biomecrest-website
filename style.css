@@ -17,7 +17,7 @@ section {
 }
 
 .title img {
-    height: 80dvh;
+    height: 80vh;
     width: auto;
 }
 
@@ -50,6 +50,6 @@ section {
 @media screen and (orientation:portrait) {
     .title img {
         height: auto;
-        width: 80dvw;
+        width: 80vw;
     }
 }
