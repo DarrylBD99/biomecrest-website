@@ -49,3 +49,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+        # Note: Removing 'index.html' from the browser URL is typically handled by web server configuration.
+        # GitHub Pages automatically serves 'index.html' at the root of each directory, so visiting '/about/' loads '/about/index.html'.
+        # No additional workflow steps are needed for this behavior.
+        # If you want pretty URLs, ensure your Jekyll site uses directories for pages (e.g., 'about/index.md' instead of 'about.html').
