@@ -24,9 +24,8 @@ section {
 .panorama {
     position: fixed;
     top: 0;
-    left: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    min-width: 100dvw; 
+    min-height: 100dvh;
     z-index: -1;
     left: 50%;
     transform: translate(-50%, 0);
@@ -38,7 +37,8 @@ section {
     border-radius: 12px;
     padding: 1rem 2rem;
     backdrop-filter: blur(8px);
-    margin: 1em 6em;
+    width: 80dvw;
+    margin: 1em auto;
 }
 
 .seasons h1 {
