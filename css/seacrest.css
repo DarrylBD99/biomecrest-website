@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    font-family: "Dancing Script", cursive;
+}
+
 .title {
     align-content: center;
     text-align: center;
@@ -11,7 +17,7 @@
     margin: 2em auto;
 }
 
-.info-panel {
+.panel {
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     border-radius: 12px;
@@ -19,6 +25,11 @@
     backdrop-filter: blur(8px);
     width: 80dvw;
     margin: 1em auto;
+}
+
+.panel h1 {
+    font-size: 2rem;
+    color: #333;
 }
 
 .back-button {
@@ -42,6 +53,58 @@
 .back-button:focus {
     background: #f0c14b;
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.creator-card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 1.5em 2em;
+    max-width: 320px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.creator-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform: translateY(-8px);
+}
+
+.creator-card:active {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+    transform: translateY(2px);
+}
+
+.creator-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.creator-links a {
+    color: #2a7ae2;
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+
+.creator-links a:hover,
+.creator-links a:focus {
+    color: #1a5bb8;
 }
 
 @media screen and (orientation:portrait) {
