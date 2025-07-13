@@ -29,12 +29,6 @@ body {
 }
 
 .panel h1 {
-    font-size: 3rem;
-    color: #333;
-    font-family: "Kaushan Script", cursive;
-}
-
-.panel h2 {
     font-size: 2rem;
     color: #333;
     font-family: "Kaushan Script", cursive;
