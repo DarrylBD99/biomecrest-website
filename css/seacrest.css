@@ -61,21 +61,20 @@ body {
 .creators {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1em;
     justify-content: center;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .creator-card {
     background: rgba(255,255,255,0.85);
-    border-radius: 10px;
+    border-radius: 1em;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    padding: 1.5em 2em;
-    max-width: 320px;
+    padding: 0.8em 1.2em;
+    min-width: 8em;
     text-align: center;
     transition: box-shadow 0.2s, transform 0.2s;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 0.8em;
     cursor: pointer;
 }
 
@@ -94,21 +93,14 @@ body {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1em;
     box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
-.creator-links a {
-    color: #2a7ae2;
-    text-decoration: none;
-    margin: 0 0.5em;
+.creator-card h2 {
     font-size: 1.1em;
-    transition: color 0.2s;
-}
-
-.creator-links a:hover,
-.creator-links a:focus {
-    color: #1a5bb8;
+    margin-top: 0.5em;
+    color: #333;
+    font-family: "Kaushan Script", cursive;
 }
 
 @media screen and (orientation:portrait) {
