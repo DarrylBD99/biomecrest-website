@@ -76,6 +76,7 @@ body {
     transition: box-shadow 0.2s, transform 0.2s;
     font-size: 1.2em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .creator-card:hover {

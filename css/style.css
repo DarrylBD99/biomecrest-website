@@ -49,6 +49,7 @@ img {
     padding: 1.5rem;
     scroll-snap-align: start;
     transition: transform 0.2s;
+    cursor: pointer;
 }
 
 .card-slider .card:hover {
