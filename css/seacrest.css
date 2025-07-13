@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 body {
     font-family: "Dancing Script", cursive;
@@ -28,8 +29,15 @@ body {
 }
 
 .panel h1 {
+    font-size: 3rem;
+    color: #333;
+    font-family: "Kaushan Script", cursive;
+}
+
+.panel h2 {
     font-size: 2rem;
     color: #333;
+    font-family: "Kaushan Script", cursive;
 }
 
 .back-button {
@@ -45,6 +53,7 @@ body {
     transition: background 0.2s, box-shadow 0.2s;
     text-decoration: none;
     position: relative;
+    font-family: "Kaushan Script", cursive;
     top: 1em;
     left: 1em;
 }
